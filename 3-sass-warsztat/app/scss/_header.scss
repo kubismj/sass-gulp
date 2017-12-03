@@ -7,21 +7,44 @@ header {
     color: #fff;
     padding: 20px 0;
     z-index: 10;
-    
+
     #main-logo {
         display: inline-block;
         float: left;
         margin-left: 30px;
-        
+
         h1 {
             display: inline-block;
             margin: 0;
         }
+        
         .fa {
             @include fa-header;
             color: $yellow-color;
             line-height: 43px;
         }
     }
+    
+    .header-contact {
+        display: inline-block;
+        float: right;
+        width: 300px;
+        
+        .fa {
+            @include fa-header;
+            line-height: 45px;
+        }
+        
+        span {
+            display: block;
+            // jeżeli się odwołujemy do 
+            &.call {
+                font-size: 0.8em;
+            }
+            
+            &.phone {
+                font-size: 1.2em;
+            }
+        }
+    }
 }
-
